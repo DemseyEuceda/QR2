@@ -1,0 +1,10 @@
+
+    <div style="display : contents; align-items: center; justify-content: center; width: 100VW; text-align: center;">
+        <div  style="width: 100vw;">
+            <qrcode elementType="img" (qrCodeURL)="onCodeChange()" [width]="400" qrdata={{dataQR}} [errorCorrectionLevel]="'H'"></qrcode>
+            <p style="font-size: 24PX;" ><b>{{dataQR}}</b></p>
+        </div>
+        <div class="card-body" style="" >
+            <button class="btn btn-danger" style="width: 9rem; font-size: 24px;" (click)="salir()" >Salir</button> 
+        </div>
+    </div>
